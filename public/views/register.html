@@ -1,0 +1,31 @@
+<div ng-controller="AuthController">
+	<form class="form-horizontal" name="registerForm">
+		<div class="form-group">
+			<label class="col-md-3 control-label" for="Username">Username</label>
+			<div class="col-md-4">
+				<input id="Email" type="text" class="form-control" name="Username" ng-model="registerUser.username" />
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-3 control-label" for="Password">Password</label>
+			<div class="col-md-4">
+				<input id="Password" type="password" class="form-control" name="Password" ng-model="registerUser.password" />
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label class="col-md-3 control-label" for="Email">Email</label>
+			<div class="col-md-4">
+				<input id="email" type="email" class="form-control" name="email" ng-model="registerUser.email" />
+			</div>
+		</div>
+
+		<div class="form-group">
+			<div class="col-md-offset-3 col-md-9">
+				<input type="submit" class="btn btn-default" value="Create my account" ng-click="registrationUser()" />
+				<input type="submit" class="btn btn-default" value="Login" ng-click="go('/')" />
+
+			</div>
+		</div>
+	</form>
+</div>
